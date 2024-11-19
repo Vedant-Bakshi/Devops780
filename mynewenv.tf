@@ -10,7 +10,7 @@ resource "aws_vpc" "myvpc" {
   }
 }
 resource "aws_subnet" "main" {
-  vpc_id     = aws_vpc.yvpc.id
+  vpc_id     = aws_vpc.myvpc.id
   cidr_block = "10.10.1.0/24"
 
   tags = {
